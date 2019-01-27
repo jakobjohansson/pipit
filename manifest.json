@@ -1,0 +1,27 @@
+{
+  "name": "PiPit",
+  "version": "0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "index.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Toggle Picture in Picture"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "description": "Toggle Picture in Picture mode",
+      "suggested_key": {
+        "windows": "Ctrl+E",
+        "mac": "Command+E",
+        "chromeos": "Ctrl+E",
+        "linux": "Ctrl+E"
+      }
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
